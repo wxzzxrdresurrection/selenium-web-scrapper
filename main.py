@@ -3,30 +3,20 @@ from selenium.webdriver.common.by import By
 import pandas as pd
 from time import sleep
 from selenium.webdriver.common.action_chains import ActionChains
+from GenericScrapper import GenericScrapper
 
-# Inicializa el WebDriver
-driver = webdriver.Chrome()
+if __name__ == "__main__":
+    scraper = GenericScrapper("https://mx.aliexpress.com")
 
-driver.get("https://mx.aliexpress.com")
-driver.maximize_window()
+    #Cerra el pop-up
+    selector = (getattr(By, "CLASS_NAME"), "pop-close-btn")
+    scraper.perform_action(selector, "click")
 
-ad = driver.find_element(By.CLASS_NAME, "pop-close-btn").click()
+    #Buscar el input de busqueda
+    selector = (getattr(By, "ID"), "search-words")
+    scraper.perform_action(selector, "input", "Relojes")
 
-input = driver.find_element(By.ID, "search-words").send_keys("Relojes")
-button = driver.find_element(By.CLASS_NAME, "search--submit--2VTbd-T").click()
+    #Buscar el boton de busqueda
+    selector = (getattr(By, "CLASS_NAME"), "search--submit--2VTbd-T")
+    scraper.perform_action(selector, "click")
 
-footer = driver.find_element(By.CLASS_NAME, "cards2023--pagination--1-0Grbh")
-delta_y = footer.rect["y"]
-delta_y = int(delta_y)
-sleep(1)
-ActionChains(driver)\
-        .scroll_by_amount(0, delta_y)\
-        .perform()
-
-sleep(2)
-
-titles = driver.find_elements(By.CLASS_NAME, "multi--titleText--nXeOvyr")
-
-for title in titles:
-    print(title.text)
-    print("")
