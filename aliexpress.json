@@ -1,0 +1,108 @@
+{
+    "url": "https://mx.aliexpress.com/",
+    "actions": [
+        {
+            "action_type": "click",
+            "selector_type": "CLASS_NAME",
+            "selector_value": "pop-close-btn",
+            "value": null
+        },
+        {
+            "action_type":"input",
+            "selector_type":"ID",
+            "selector_value":"search-words",
+            "value":"Relojes"
+        },
+        {
+            "action_type":"click",
+            "selector_type":"CLASS_NAME",
+            "selector_value":"search--submit--2VTbd-T",
+            "value":null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "CLASS_NAME",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "CLASS_NAME",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "CLASS_NAME",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "CLASS_NAME",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "CLASS_NAME",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "CLASS_NAME",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "CLASS_NAME",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "CLASS_NAME",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "CLASS_NAME",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "CLASS_NAME",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "CLASS_NAME",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "scroll",
+            "selector_type" : "CLASS_NAME",
+            "selector_value" : "lazy-load",
+            "value": null
+        },
+        {
+            "action_type" : "select",
+            "selector_type" : "CLASS_NAME",
+            "selector_value" : "multi--titleText--nXeOvyr",
+            "value": null
+        },
+        {
+            "action_type": "excel",
+            "selector_type": "CLASS_NAME",
+            "selector_value": null,
+            "value": "ali.xlsx"
+        }
+
+    ]
+}
